@@ -1,7 +1,42 @@
-#ImageChooser {
+#wholePage {
   display: grid;
+  width: 100vw;
+  height: 100vh;
+  /*height: auto; */
+  grid-template-columns: 1fr 0.05fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 0.1fr 1fr;
+  grid-template-areas:
+    "a . b b"
+    "a . b b"
+    "a . . ."
+    "a . c c";
+}
+
+#ImageChooser {
+  grid-area: a;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: dotted red;
+  overflow-y: scroll;
+}
+
+#ImageChooser img {
+  max-width: 25vw;
+}
+
+#Preview {
+  grid-area: b;
+  border: dotted blue;
+}
+
+#Input {
+  grid-area: c;
+  border: dotted green;
 }
 
 ul {
   list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
