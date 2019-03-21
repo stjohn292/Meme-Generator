@@ -3,27 +3,9 @@ import React, { Component } from "react";
 class ThumbnailPicker extends Component {
   render() {
     return (
-      <div id="wholePage">
-        <div id="ImageChooser">
-          <h1>Choose an Image</h1>
-          <ul>
-            <li>
-              <img src="/Images/Baby.jpg" />
-            </li>
-            <li>
-              <img src="/Images/2.jpg" />
-            </li>
-
-            <li>
-              <img src="/Images/3.jpg" />
-            </li>
-            <li>
-              <img src="/Images/HiDog.jpg" />
-            </li>
-          </ul>
-        </div>
-        <div id="Preview" />
-        <div id="Input" />
+      <div id="ImageChooser">
+        <h1>Choose an Image</h1>
+        <ul />
       </div>
     );
   }
