@@ -25,6 +25,10 @@
   max-width: 25vw;
 }
 
+#ImageChooser img:hover {
+  filter: brightness(50%);
+}
+
 #Preview {
   grid-area: b;
   border: dotted blue;
