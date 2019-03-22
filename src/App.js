@@ -7,9 +7,9 @@ import MemePreviewer from "./MemePreviewer";
 class App extends Component {
   constructor() {
     super();
-    this.state = {     
-      topText: "foo",
-      bottomText: "Bar",
+    this.state = {
+      topText: "",
+      bottomText: "",
       selectedImage: "/Images/Baby.jpg",
       images: [
         "/Images/Baby.jpg",
@@ -31,13 +31,12 @@ class App extends Component {
   };
 
   setTopText = text => {
-    this.setState({topText: text});
-  }
+    this.setState({ topText: text });
+  };
 
   setBottomText = text => {
-    this.setState({bottomText: text});
-  }
-
+    this.setState({ bottomText: text });
+  };
 
   render() {
     return (
@@ -47,19 +46,17 @@ class App extends Component {
           selectedImage={this.state.selectedImage}
           setImage={this.setImage}
         />
-        <MemePreviewer 
-          topText = {this.state.topText}
+        <MemePreviewer
+          topText={this.state.topText}
           selectedImage={this.state.selectedImage}
-          bottomText = {this.state.bottomText}
-
+          bottomText={this.state.bottomText}
         />
-        <MemeInputPanel 
-          topText = {this.state.topText}
-          bottomText = {this.state.bottomText}
-          setTopText = {this.setTopText}
-          setBottomText = {this.setBottomText}
+        <MemeInputPanel
+          topText={this.state.topText}
+          bottomText={this.state.bottomText}
+          setTopText={this.setTopText}
+          setBottomText={this.setBottomText}
         />
-        
       </div>
     );
   }
