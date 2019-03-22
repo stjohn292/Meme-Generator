@@ -2,7 +2,6 @@
   display: grid;
   width: 100vw;
   height: 100vh;
-  /*height: auto; */
   grid-template-columns: 1fr 0.05fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 0.1fr 1fr;
   grid-template-areas:
@@ -43,4 +42,8 @@ ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
+}
+
+.selected {
+  border: 2px solid blue;
 }

@@ -8,6 +8,8 @@ class App extends Component {
   constructor() {
     super();
     this.state = {
+      // topText: "Foo",
+      // bottomText: "Bar",
       selectedImage: "/Images/Baby.jpg",
       images: [
         "/Images/Baby.jpg",
@@ -17,12 +19,23 @@ class App extends Component {
       ]
     };
   }
+
+  setImage = image => {
+    this.setState({ selectedImage: image });
+  };
+
+  addNew = images => {
+    const newImage = [...this.state.images, images];
+    this.setState({ images: newImage });
+  };
+
   render() {
     return (
       <div id="wholePage">
         <ThumbnailPicker
           allImages={this.state.images}
           selectedImage={this.state.selectedImage}
+          setImage={this.setImage}
         />
         <MemeInputPanel />
         <MemePreviewer />
