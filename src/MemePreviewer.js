@@ -2,14 +2,15 @@ import React, { Component } from "react";
 
 class MemePreviewer extends Component {
   render() {
-    const { images } = this.props;
+    const { topText, images, bottomText } = this.props;
+    
     return (
       <>
         <div id="Preview">
-          <span />
-          {/* <span>{topText}</span> */}
-          <img src="/Images/3.jpg" onClick={this.onAdd} />
-          {/* <span>{bottomText}</span> */}
+          {/* <span /> */}
+          <span>{topText}</span>
+          <img src={images} onClick={this.onAdd} />
+          <span>{bottomText}</span>
         </div>
       </>
     );

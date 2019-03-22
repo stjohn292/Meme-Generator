@@ -8,14 +8,15 @@ class App extends Component {
   constructor() {
     super();
     this.state = {
-      // topText: "Foo",
-      // bottomText: "Bar",
+      topText: "Foo",
+      bottomText: "Bar",
       selectedImage: "/Images/Baby.jpg",
       images: [
         "/Images/Baby.jpg",
         "/Images/2.jpg",
         "/Images/3.jpg",
-        "/Images/HiDog.jpg"
+        "/Images/HiDog.jpg",
+        "/Images/WWKD.png"
       ]
     };
   }
@@ -29,6 +30,10 @@ class App extends Component {
     this.setState({ images: newImage });
   };
 
+  setTopText = text => {
+    this.setState({topText: text});
+  };
+
   render() {
     return (
       <div id="wholePage">
@@ -37,8 +42,12 @@ class App extends Component {
           selectedImage={this.state.selectedImage}
           setImage={this.setImage}
         />
+        <MemePreviewer 
+          topText = {this.props.topText}
+          
+        />
         <MemeInputPanel />
-        <MemePreviewer />
+        
       </div>
     );
   }
