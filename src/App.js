@@ -7,8 +7,8 @@ import MemePreviewer from "./MemePreviewer";
 class App extends Component {
   constructor() {
     super();
-    this.state = {
-      topText: "Foo",
+    this.state = {     
+      topText: "foo",
       bottomText: "Bar",
       selectedImage: "/Images/Baby.jpg",
       images: [
@@ -32,7 +32,12 @@ class App extends Component {
 
   setTopText = text => {
     this.setState({topText: text});
-  };
+  }
+
+  setBottomText = text => {
+    this.setState({bottomText: text});
+  }
+
 
   render() {
     return (
@@ -43,8 +48,10 @@ class App extends Component {
           setImage={this.setImage}
         />
         <MemePreviewer 
-          topText = {this.props.topText}
-          
+          topText = {this.state.topText}
+          selectedImage={this.state.selectedImage}
+          bottomText = {this.state.bottomText}
+
         />
         <MemeInputPanel />
         
