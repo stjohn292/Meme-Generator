@@ -50,6 +50,10 @@
   left: 0;
   text-align: center;
   z-index: 100;
+  font-family: Impact;
+  color: white;
+  text-shadow: 2px 2px black;
+  font-size: 4em;
 }
 
 #bottomText {
@@ -59,6 +63,10 @@
   left: 0;
   text-align: center;
   z-index: 100;
+  font-family: Impact;
+  color: white;
+  text-shadow: 2px 2px black;
+  font-size: 4em;
 }
 
 #Input {
