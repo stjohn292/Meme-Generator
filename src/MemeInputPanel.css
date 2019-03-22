@@ -1,0 +1,34 @@
+#Input {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 10px, blue;
+  background-color: gray;
+}
+
+#TextBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 10px, blue;
+}
+
+#InputPanelContainer h2 {
+  font-family: impact;
+  font-size: 3rem;
+  text-align: center;
+}
+
+#Header {
+  background-color: green;
+}
+
+#TopText {
+  padding: 0.5rem;
+  margin: 0.5rem;
+}
+
+#BottomText {
+  padding: 0.5rem;
+  margin: 0.5rem;
+}
