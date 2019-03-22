@@ -1,24 +1,22 @@
 import React, { Component } from "react";
 
 class MemeInputPanel extends Component {
-  onAdd = () => {
-    this.props.addNew(this.props.text);
-    this.props.setText("");
+  onTopTextChange = event => {
+    this.props.setTopText(event.target.value);
   };
-
-  // onTextChange = event => {
-  //   this.props.setText(event.target.value);
-  // };
-
+  onBottomTextChange = event => {
+    this.props.setBottomText(event.target.value);
+  };
+ 
   render() {
+    const {topText, bottomText} = this.props;
     return (
       <div id="Input">
         <h2>Write your text</h2>
-        <label>
-          {/* Item:
-          <input type="text" value={text} onChange={this.onTextChange} /> */}
-        </label>
-        <button>Add Text</button>
+                
+          <input type="text" value={topText} onChange={this.onTopTextChange} />   
+          <input type="text" value={bottomText} onChange={this.onBottomTextChange} />      
+  
       </div>
     );
   }

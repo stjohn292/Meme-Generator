@@ -53,7 +53,12 @@ class App extends Component {
           bottomText = {this.state.bottomText}
 
         />
-        <MemeInputPanel />
+        <MemeInputPanel 
+          topText = {this.state.topText}
+          bottomText = {this.state.bottomText}
+          setTopText = {this.setTopText}
+          setBottomText = {this.setBottomText}
+        />
         
       </div>
     );
