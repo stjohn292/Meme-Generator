@@ -16,7 +16,7 @@ class App extends Component {
         "/Images/2.jpg",
         "/Images/3.jpg",
         "/Images/HiDog.jpg",
-        "/Images/WWKD.png"
+        "/Images/WWKD.jpg"
       ]
     };
   }

@@ -13,18 +13,18 @@ class MemeInputPanel extends Component {
     const { topText, bottomText } = this.props;
     return (
       <div id="Input">
-        <div id="Header">
+        {/* <div id="Header">
           <h2>Write your dank text!</h2>
-        </div>
+        </div> */}
         <div id="TextBox">
-          <p>This goes on top:</p>
+          <p>Top Text:</p>
           <input
             id="TopText"
             type="text"
             value={topText}
             onChange={this.onTopTextChange}
           />
-          <p>This goes on the bottom:</p>
+          <p>Bottom Text:</p>
           <input
             id="BottomText"
             type="text"
