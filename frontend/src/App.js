@@ -29,11 +29,6 @@ class App extends Component {
     this.setState({ selectedImage: image });
   };
 
-  addNew = images => {
-    const newImage = [...this.state.images, images];
-    this.setState({ images: newImage });
-  };
-
   setTopText = text => {
     this.setState({ topText: text });
   };
@@ -42,6 +37,29 @@ class App extends Component {
     this.setState({ bottomText: text });
   };
 
+  publishMeme = () => {
+    const newMeme = {
+      topText: this.state.topText,
+      selectedImage: this.state.selectedImage,
+      bottomText: this.state.bottomText
+    };
+
+    fetch("https://localhost:44374/api/values", {
+      method: "POST",
+      body: JSON.stringify(newMeme),
+      headers: {
+        "Content-Type": "application/json"
+      }
+    })
+      .then(res => {
+        if (res.ok) {
+          alert("it worked");
+        }
+      })
+      .catch(err => {
+        console.error(err);
+      });
+  };
   render() {
     return (
       <div id="wholePage">
@@ -60,6 +78,7 @@ class App extends Component {
           bottomText={this.state.bottomText}
           setTopText={this.setTopText}
           setBottomText={this.setBottomText}
+          publishMeme={this.publishMeme}
         />
       </div>
     );
