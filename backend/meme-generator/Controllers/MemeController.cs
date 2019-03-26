@@ -13,8 +13,9 @@ namespace meme_generator.Controllers
     {
         private static List<string> all = new List<string>()
         {
-
-        }
+            "Image1",
+            "Image2",       
+        };
 
         [HttpGet]
         public ActionResult<IEnumerable<string>> Get()

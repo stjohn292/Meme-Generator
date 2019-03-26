@@ -1,5 +1,6 @@
 using meme_generator.Controllers;
 using System;
+using System.Linq;
 using Xunit;
 
 namespace meme_generatorTests
@@ -13,7 +14,7 @@ namespace meme_generatorTests
 
             var result = underTest.Get();
 
-            Assert.Equal(3, result.Value.Count());
+            Assert.Equal(2, result.Value.Count());
         }
     }
 }

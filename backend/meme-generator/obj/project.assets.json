@@ -12538,11 +12538,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\WeCanCodeIT\\source\\repos\\meme-generator\\meme-generator\\meme-generator\\meme-generator.csproj",
+      "projectUniqueName": "C:\\Users\\WeCanCodeIT\\source\\repos\\meme-generator\\backend\\meme-generator\\meme-generator.csproj",
       "projectName": "meme-generator",
-      "projectPath": "C:\\Users\\WeCanCodeIT\\source\\repos\\meme-generator\\meme-generator\\meme-generator\\meme-generator.csproj",
+      "projectPath": "C:\\Users\\WeCanCodeIT\\source\\repos\\meme-generator\\backend\\meme-generator\\meme-generator.csproj",
       "packagesPath": "C:\\Users\\WeCanCodeIT\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\WeCanCodeIT\\source\\repos\\meme-generator\\meme-generator\\meme-generator\\obj\\",
+      "outputPath": "C:\\Users\\WeCanCodeIT\\source\\repos\\meme-generator\\backend\\meme-generator\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
