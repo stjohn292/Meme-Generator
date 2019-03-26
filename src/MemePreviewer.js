@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import "./MemePreviewer.css";
 
 class MemePreviewer extends Component {
   render() {

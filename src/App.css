@@ -2,10 +2,9 @@
   display: grid;
   width: 100vw;
   height: 100vh;
-  /* background-color: lightgray; */
   background-image: url("/Images/background1.jpg");
   grid-template-columns: 1fr 0.05fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1 fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
   grid-template-areas:
     "a . b b b"
     "a . b b b"
@@ -46,52 +45,12 @@ ul {
   border: 2px solid blue;
 }
 
+#ImageChooser {
+  grid-area: a;
+}
+
 #Preview {
   grid-area: b;
-  position: relative;
-  display: block;
-  margin: auto;
-  /* display: flex;
-  align-items: center;
-  justify-items: center; */
-  /* align-content: center; */
-}
-
-#image {
-  height: 75vh;
-  display: block;
-  background-size: cover;
-  border-radius: 5%;
-  /* align-items: center;
-  justify-items: center; */
-  /* align-self: center; */
-  align-content: center;
-}
-
-#topText {
-  position: absolute;
-  top: 0.2em;
-  right: 0;
-  left: 0;
-  text-align: center;
-  z-index: 100;
-  font-family: "ZCOOL XiaoWei", serif;
-  color: white;
-  text-shadow: 2px 2px black;
-  font-size: 4em;
-}
-
-#bottomText {
-  position: absolute;
-  bottom: 0.7em;
-  right: 0;
-  left: 0;
-  text-align: center;
-  z-index: 100;
-  font-family: "ZCOOL XiaoWei", serif;
-  color: white;
-  text-shadow: 2px 2px black;
-  font-size: 4em;
 }
 
 #Input {
