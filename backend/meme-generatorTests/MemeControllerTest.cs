@@ -26,5 +26,16 @@ namespace meme_generatorTests
 
             Assert.True(result.Value);
         }
+
+        [Fact]
+        public void Post_Increases_Meme_Count()
+        {
+            var underTest = new MemeController();
+            underTest.Post("Foo");
+
+            var result = underTest.Get();
+
+            Assert.Equal(4, result.Value.Count());
+        }
     }
 }
