@@ -6,8 +6,7 @@ class MemePreviewer extends Component {
     
     return (
       <>
-        <div id="Preview">
-          {/* <span /> */}
+        <div className="Preview">
           <span>{topText}</span>
           <img src={selectedImage} />
           <span>{bottomText}</span>
