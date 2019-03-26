@@ -15,6 +15,11 @@
   border: 10px, blue;
 }
 
+#TextBox p {
+  font-family: "ZCOOL XiaoWei", serif;
+  font-weight: bold;
+}
+
 #InputPanelContainer h2 {
   font-family: impact;
   font-size: 3rem;
