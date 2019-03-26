@@ -7,6 +7,7 @@ class MemeInputPanel extends Component {
   };
   onBottomTextChange = event => {
     this.props.setBottomText(event.target.value);
+  }
 
     addMeme = event => {
       this.props.publishMeme(event.target.value);
