@@ -22,5 +22,12 @@ namespace meme_generator.Controllers
         {
             return all;
         }
+        
+        [HttpPost]
+        public ActionResult<bool> Post([FromBody] string meme)
+        {
+            all.Add(meme);
+            return true;
+        }
     }
 }

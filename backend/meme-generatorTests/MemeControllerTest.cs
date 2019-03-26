@@ -16,5 +16,15 @@ namespace meme_generatorTests
 
             Assert.Equal(2, result.Value.Count());
         }
+
+        [Fact]
+        public void Post_Creates_New_Meme()
+        {
+            var underTest = new MemeController();
+
+            var result = underTest.Post("Hello World");
+
+            Assert.True(result.Value);
+        }
     }
 }
