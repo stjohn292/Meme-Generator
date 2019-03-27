@@ -90,6 +90,7 @@ class App extends Component {
         />
         <MemeListViewer 
          memes ={this.state.memes}
+         memeList={this.state.memeList}
         />
       </div>
     );
