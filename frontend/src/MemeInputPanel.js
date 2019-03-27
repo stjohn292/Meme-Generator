@@ -5,16 +5,13 @@ class MemeInputPanel extends Component {
   onTopTextChange = event => {
     this.props.setTopText(event.target.value);
   };
+
   onBottomTextChange = event => {
     this.props.setBottomText(event.target.value);
   };
 
-  addMeme = event => {
-    this.props.publishMeme(event.target.value);
-  };
-
   render() {
-    const { topText, bottomText } = this.props;
+    const { topText, bottomText, publishMeme } = this.props;
     return (
       <div id="Input">
         <div id="TextBox">
@@ -33,7 +30,7 @@ class MemeInputPanel extends Component {
             onChange={this.onBottomTextChange}
           />
         </div>
-        <button onClick={this.addMeme}>Add Your Meme</button>
+        <button onClick={publishMeme}>Add Your Meme</button>
       </div>
     );
   }

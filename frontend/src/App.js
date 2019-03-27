@@ -45,7 +45,7 @@ class App extends Component {
       bottomText: this.state.bottomText
     };
 
-    fetch("https://localhost:44374/api/values", {
+    fetch("https://localhost:44374/api/memes", {
       method: "POST",
       body: JSON.stringify(newMeme),
       headers: {
@@ -79,6 +79,7 @@ class App extends Component {
           bottomText={this.state.bottomText}
           setTopText={this.setTopText}
           setBottomText={this.setBottomText}
+          publishMeme={this.publishMeme}
         />
         <MemeListViewer />
       </div>
