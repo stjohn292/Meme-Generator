@@ -1,4 +1,7 @@
 using meme_generator.Controllers;
+using meme_generator.Models;
+using meme_generator.Repositories;
+using NSubstitute;
 using System;
 using System.Linq;
 using Xunit;
@@ -8,44 +11,15 @@ namespace meme_generatorTests
     public class MemeControllerTest
     {
         [Fact]
-        public void Get_Returns_List_Of_Memes()
-        {
-            var underTest = new MemeController();
-
-            var result = underTest.Get();
-
-            Assert.Equal(2, result.Value.Count());
-        }
-
-        [Fact]
         public void Post_Creates_New_Meme()
         {
-            var underTest = new MemeController();
+            var meme = new Meme();
+            var repo = Substitute.For<IMemeRepository>();
+            var underTest = new MemeController(repo);
 
-            var result = underTest.Post("Hello World");
+            underTest.Post(meme);
 
-            Assert.True(result.Value);
-        }
-
-        [Fact]
-        public void Post_Increases_Meme_Count()
-        {
-            var underTest = new MemeController();
-            underTest.Post("Foo");
-
-            var result = underTest.Get();
-
-            Assert.Equal(4, result.Value.Count());
-        }
-
-        [Fact]
-        public void Index_Returns_Hello_World()
-        {
-            var underTest = new MemeController();
-
-            var result = underTest.Index();
-
-            Assert.Equal("Hello World!", result);
+            repo.Received().Create(meme);
         }
     }
 }

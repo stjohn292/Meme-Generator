@@ -1,7 +1,7 @@
 {
   "runtimeTarget": {
     "name": ".NETCoreApp,Version=v2.1",
-    "signature": "076e7715ae3bc41120370cc47993940555ff6343"
+    "signature": "3c38af8a95e03fc2848f9b1fdaf930b37dfbe23b"
   },
   "compilationOptions": {},
   "targets": {
@@ -10,6 +10,7 @@
         "dependencies": {
           "Microsoft.NET.Test.Sdk": "15.9.0",
           "Microsoft.NETCore.App": "2.1.0",
+          "NSubstitute": "4.0.0",
           "meme-generator": "1.0.0",
           "xunit": "2.4.0",
           "xunit.runner.visualstudio": "2.4.0"
@@ -18,7 +19,7 @@
           "meme-generatorTests.dll": {}
         }
       },
-      "Castle.Core/4.2.1": {
+      "Castle.Core/4.3.1": {
         "dependencies": {
           "NETStandard.Library": "2.0.3",
           "System.ComponentModel": "4.3.0",
@@ -26,9 +27,9 @@
           "System.Diagnostics.TraceSource": "4.3.0"
         },
         "runtime": {
-          "lib/netstandard1.3/Castle.Core.dll": {
+          "lib/netstandard1.5/Castle.Core.dll": {
             "assemblyVersion": "4.0.0.0",
-            "fileVersion": "4.2.1.0"
+            "fileVersion": "4.3.1.0"
           }
         }
       },
@@ -90,7 +91,7 @@
       "Microsoft.EntityFrameworkCore.Analyzers/2.1.8": {},
       "Microsoft.EntityFrameworkCore.Proxies/2.1.8": {
         "dependencies": {
-          "Castle.Core": "4.2.1",
+          "Castle.Core": "4.3.1",
           "Microsoft.EntityFrameworkCore": "2.1.8"
         },
         "runtime": {
@@ -496,6 +497,17 @@
           "Microsoft.NETCore.Platforms": "2.1.0"
         }
       },
+      "NSubstitute/4.0.0": {
+        "dependencies": {
+          "Castle.Core": "4.3.1"
+        },
+        "runtime": {
+          "lib/netstandard2.0/NSubstitute.dll": {
+            "assemblyVersion": "4.0.0.0",
+            "fileVersion": "4.0.0.0"
+          }
+        }
+      },
       "NuGet.Frameworks/4.7.0": {
         "dependencies": {
           "NETStandard.Library": "2.0.3"
@@ -742,12 +754,12 @@
       "serviceable": false,
       "sha512": ""
     },
-    "Castle.Core/4.2.1": {
+    "Castle.Core/4.3.1": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-tLlM4XU+aj0n8TdkiHHmV/48GpTuFEPQimFjHTZGD9XTWRCSLQcnB6rOftqaUSCXeBSbmWWEGeLPTLG3siTrcw==",
-      "path": "castle.core/4.2.1",
-      "hashPath": "castle.core.4.2.1.nupkg.sha512"
+      "sha512": "sha512-Dx90A7xzdyYiaq1aMn3QmblpFAaVhDCiZkSblt96pf8QopOjLxCcs5ufKJA1zyg2L+Hxjnzx3JNrmfK8ZMRHvA==",
+      "path": "castle.core/4.3.1",
+      "hashPath": "castle.core.4.3.1.nupkg.sha512"
     },
     "Microsoft.CodeAnalysis.CSharp.Workspaces/2.8.0": {
       "type": "package",
@@ -944,6 +956,13 @@
       "sha512": "sha512-st47PosZSHrjECdjeIzZQbzivYBJFv6P2nv4cj2ypdI204DO+vZ7l5raGMiX4eXMJ53RfOIg+/s4DHVZ54Nu2A==",
       "path": "netstandard.library/2.0.3",
       "hashPath": "netstandard.library.2.0.3.nupkg.sha512"
+    },
+    "NSubstitute/4.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-XWUhuNVAo0FuKWMKnEAD1/NZ5nQcScGCd72vMRcKWoYrvXZTSvbaf5xBqO+6T9o426TOR++m+0VwE5b0U+P7og==",
+      "path": "nsubstitute/4.0.0",
+      "hashPath": "nsubstitute.4.0.0.nupkg.sha512"
     },
     "NuGet.Frameworks/4.7.0": {
       "type": "package",

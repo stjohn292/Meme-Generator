@@ -41,11 +41,11 @@ class App extends Component {
   publishMeme = () => {
     const newMeme = {
       topText: this.state.topText,
-      selectedImage: this.state.selectedImage,
+      imagePath: this.state.selectedImage,
       bottomText: this.state.bottomText
     };
 
-    fetch("https://localhost:44374/api/memes", {
+    fetch("https://localhost:44374/api/meme", {
       method: "POST",
       body: JSON.stringify(newMeme),
       headers: {
