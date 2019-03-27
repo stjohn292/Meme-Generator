@@ -9,5 +9,7 @@ namespace meme_generator.Repositories
     public interface IMemeRepository
     {
         void Create(Meme meme);
+        IEnumerable<Meme> GetAll();
+      
     }
 }

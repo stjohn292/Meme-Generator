@@ -23,7 +23,7 @@ namespace meme_generator.Controllers
         [HttpGet]
         public ActionResult<IEnumerable<Meme>> Get()
         {
-            throw new NotImplementedException();
+            return repo.GetAll().ToArray();
         }
 
         [HttpPost]
