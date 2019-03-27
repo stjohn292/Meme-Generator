@@ -1,10 +1,20 @@
 import React, { Component } from "react";
 import "./MemeListViewer.css";
+import { id } from "postcss-selector-parser";
 
 class MemeListViewer extends Component {
   render() {
-    const { allMemes } = this.props; // map memes into an array of MemePreviewer items which will be the MemeListViewer
-    return <div id="memeList">Put Memes Here, please.</div>;
+    const { memes } = this.props;
+    const memeList = memes.map(item => (
+      <div>
+        {" "}
+        <span>{item.topText}</span>
+        <img src={item.imagePath} />
+        <span>{item.bottomText}</span>
+      </div>
+    ));
+
+    return [memeList];
   }
 }
 

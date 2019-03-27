@@ -23,10 +23,7 @@ class App extends Component {
         "/Images/Grandma.jpg",
         "/Images/money.jpg"
       ],
-      memes:
-      [
-
-      ]
+      memes:[]
     };
   }
   componentDidMount(){
@@ -63,9 +60,8 @@ class App extends Component {
     })
       .then(res => {
         if (res.ok) {
-          //alert("it worked")
-          const newMeme = [...this.state.memes];
-          this.setState({ memes: newMeme });
+          const allMemes = [...this.state.memes, newMeme];
+          this.setState({ memes: allMemes });
         }
       })
       .catch(err => {
@@ -94,6 +90,7 @@ class App extends Component {
         />
         <MemeListViewer 
          memes ={this.state.memes}
+         memeList={this.state.memeList}
         />
       </div>
     );
