@@ -32,7 +32,6 @@ namespace meme_generator
                        .AllowAnyHeader();
             }));
 
-            
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
         }
 
@@ -51,6 +50,15 @@ namespace meme_generator
             app.UseCors("MyPolicy");
             app.UseHttpsRedirection();
             app.UseMvc();
+
+            app.UseStaticFiles();
+
+            app.UseMvc(routes =>
+            {
+                routes.MapRoute(
+                    name: "default",
+                    template: "{controller=Meme}/{action=Index}/{id?}");
+            });
         }
     }
 }

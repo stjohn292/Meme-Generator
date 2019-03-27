@@ -37,5 +37,15 @@ namespace meme_generatorTests
 
             Assert.Equal(4, result.Value.Count());
         }
+
+        [Fact]
+        public void Index_Returns_Hello_World()
+        {
+            var underTest = new MemeController();
+
+            var result = underTest.Index();
+
+            Assert.Equal("Hello World!", result);
+        }
     }
 }

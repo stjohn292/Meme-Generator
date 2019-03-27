@@ -29,5 +29,10 @@ namespace meme_generator.Controllers
             all.Add(meme);
             return true;
         }
+
+        public string Index()
+        {
+            return "Hello World!";
+        }
     }
 }
