@@ -7,20 +7,17 @@ class MemeInputPanel extends Component {
   };
   onBottomTextChange = event => {
     this.props.setBottomText(event.target.value);
-  }
-
-    addMeme = event => {
-      this.props.publishMeme(event.target.value);
-    };
   };
 
+  addMeme = event => {
+    this.props.publishMeme(event.target.value);
+  };
+  // };
+
   render() {
-    const { topText, bottomText } = this.props;
+    const { topText, bottomText, selectedImage } = this.props;
     return (
       <div id="Input">
-        {/* <div id="Header">
-          <h2>Write your dank text!</h2>
-        </div> */}
         <div id="TextBox">
           <p>Top Text:</p>
           <input
@@ -39,7 +36,7 @@ class MemeInputPanel extends Component {
           <input
             id="MemeAdd"
             type="meme"
-            value={meme}
+            value={selectedImage}
             onChange={this.addMeme}
           />
           />
