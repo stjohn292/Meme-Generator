@@ -20,5 +20,28 @@ namespace meme_generator
 
             base.OnConfiguring(optionsBuilder);
         }
+
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            modelBuilder.Entity<Meme>().HasData(
+            new Meme()
+            {
+                Id = 1,
+                TopText = "Hellooo..",
+                ImagePath = "/Images/Grandma.jpg",
+                BottomText = "Is anybody in there?",
+            },
+            new Meme()
+            {
+                Id = 2,
+                TopText = "I'm just in this",
+                ImagePath = "/Images/money.jpg",
+                BottomText = "for the money!"
+            }
+            );
+
+            base.OnModelCreating(modelBuilder);
+        }
     }
 }
+
