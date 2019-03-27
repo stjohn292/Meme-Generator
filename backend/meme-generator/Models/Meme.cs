@@ -11,6 +11,5 @@ namespace meme_generator.Models
     public string TopText { get; set; }
     public string ImagePath { get; set; }
     public string BottomText { get; set; }
-    public virtual List<Meme> Memes { get; set; }
     }
 }

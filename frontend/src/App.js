@@ -3,6 +3,7 @@ import "./App.css";
 import ThumbnailPicker from "./ThumbnailPicker";
 import MemeInputPanel from "./MemeInputPanel";
 import MemePreviewer from "./MemePreviewer";
+import MemeListViewer from "./MemeListViewer";
 
 class App extends Component {
   constructor() {
@@ -78,8 +79,8 @@ class App extends Component {
           bottomText={this.state.bottomText}
           setTopText={this.setTopText}
           setBottomText={this.setBottomText}
-          publishMeme={this.publishMeme}
         />
+        <MemeListViewer />
       </div>
     );
   }
