@@ -3,13 +3,13 @@
   width: 100vw;
   height: 100vh;
   background-image: url("/Images/background1.jpg");
-  grid-template-columns: 1fr 0.05fr 1fr 1fr 1fr 0.05fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 0.05fr 1fr 1fr 1fr 0.05fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr;
   grid-template-areas:
-    "a . b b b . d d d"
-    "a . b b b . d d d"
-    "a . b b b . d d d"
-    "a . c c c . d d d";
+    "a . b b . . d d"
+    "a . b b . . d d"
+    "a . b b . . d d"
+    "a . c c c . d d";
 }
 
 #ImageChooser {
