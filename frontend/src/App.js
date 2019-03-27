@@ -22,8 +22,14 @@ class App extends Component {
         "/Images/Kermit.jpg",
         "/Images/Grandma.jpg",
         "/Images/money.jpg"
-      ]
+      ],
+      memes: []
     };
+  }
+  componentDidMount(){
+    fetch("https://localhost:44374/api/meme")
+    .then(res => res.json())
+    .then(json => this.setState({ memes: json}));
   }
 
   setImage = image => {
