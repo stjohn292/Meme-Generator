@@ -30,7 +30,9 @@ class MemeInputPanel extends Component {
             onChange={this.onBottomTextChange}
           />
         </div>
-        <button onClick={publishMeme}>Add Your Meme</button>
+        <button id="memeButton" onClick={publishMeme}>
+          Add Your Meme
+        </button>
       </div>
     );
   }

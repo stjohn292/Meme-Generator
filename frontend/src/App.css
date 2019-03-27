@@ -23,3 +23,7 @@
 #Input {
   grid-area: c;
 }
+
+#memeList {
+  grid-area: d;
+}
