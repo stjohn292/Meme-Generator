@@ -10,20 +10,26 @@
     "a . b b . . d d"
     "a . b b . . d d"
     "a . c c c . d d";
+  margin: auto;
 }
 
 #ImageChooser {
   grid-area: a;
+  margin: auto;
 }
 
 #Preview {
   grid-area: b;
+  margin: auto;
 }
 
 #Input {
   grid-area: c;
+  margin: auto;
 }
 
 #memeList {
   grid-area: d;
+  margin: auto;
+  border: dotted yellow;
 }
