@@ -1,16 +1,49 @@
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 #wholePage {
   display: grid;
   width: 100vw;
   height: 100vh;
   background-image: url("/Images/background1.jpg");
-  grid-template-columns: 1fr 0.4fr 1fr 1fr 1fr 0.05fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 0.75fr 1fr;
+  grid-template-columns: 1.5fr 2fr 1.5fr;
+  grid-template-rows: 3fr 1fr;
   grid-template-areas:
-    "a . b b . . d d"
-    "a . b b . . d d"
-    "a . b b . . d d"
-    "a . c c c . d d";
-  padding: 1em, 0em, 1em, 1em;
+    "a b d"
+    "a c d";
   margin: auto;
 }
 

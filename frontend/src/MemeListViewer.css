@@ -16,9 +16,9 @@
   background-size: cover;
 }
 
-#memeList img:hover {
+/* #memeList img:hover {
   filter: brightness(80%);
-}
+} */
 
 #memeList ul {
   list-style-type: none;

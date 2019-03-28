@@ -5,6 +5,10 @@
   margin: auto;
 }
 
+/* #Preview h1 {
+  margin-bottom: 2em;
+} */
+
 #previewImage {
   width: 65vh;
   display: block;
