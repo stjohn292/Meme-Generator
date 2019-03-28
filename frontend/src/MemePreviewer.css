@@ -5,10 +5,6 @@
   margin: auto;
 }
 
-/* #Preview h1 {
-  margin-bottom: 2em;
-} */
-
 #previewImage {
   width: 65vh;
   display: block;
@@ -21,7 +17,7 @@
 
 #topText {
   position: absolute;
-  top: 0.2em;
+  top: 0.5em;
   right: 0;
   left: 0;
   text-align: center;
@@ -34,7 +30,7 @@
 
 #bottomText {
   position: absolute;
-  bottom: 0.7em;
+  bottom: 0.1em;
   right: 0;
   left: 0;
   text-align: center;
