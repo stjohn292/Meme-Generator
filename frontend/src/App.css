@@ -45,6 +45,7 @@ img {
     "a b d"
     "a c d";
   margin: auto;
+  grid-gap: 1em;
 }
 
 #ImageChooser {
