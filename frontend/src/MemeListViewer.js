@@ -8,9 +8,11 @@ class MemeListViewer extends Component {
     const memeList = memes.map(item => (
       <li key={id}>
         {" "}
-        <span>{item.topText}</span>
-        <img src={item.imagePath} />
-        <span>{item.bottomText}</span>
+        <div id="listItemContainer">
+          <span id="listTopText">{item.topText}</span>
+          <img id="listImage" src={item.imagePath} />
+          <span id="listBottomText">{item.bottomText}</span>
+        </div>
       </li>
     ));
     return (
