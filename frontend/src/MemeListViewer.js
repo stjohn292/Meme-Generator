@@ -7,7 +7,7 @@ class MemeListViewer extends Component {
     const { memes } = this.props;
     const memeList = memes.map(item => (
       <li key={id}>
-        {" "}
+      
         <div id="listItemContainer">
           <span id="listTopText">{item.topText}</span>
           <img id="listImage" src={item.imagePath} />
