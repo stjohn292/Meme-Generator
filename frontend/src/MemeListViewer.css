@@ -3,9 +3,10 @@
   display: flex;
   flex-direction: column;
   align-content: center;
+  justify-content: center;
   overflow-y: scroll;
   max-height: 100vh;
-  font-family: "ZCOOL XiaoWei", serif;
+  font-family: "Oswald", sans-serif;
   font-size: 0.7em;
 }
 
@@ -26,13 +27,14 @@
   margin: 0;
   padding: 0;
   align-items: center;
+  padding-bottom: 0.5em;
 }
 
 #listItemContainer {
   display: flex;
   flex-direction: column;
   align-items: center;
-  max-height: ;
+  /* max-height: ; */
 }
 
 #listTopText {

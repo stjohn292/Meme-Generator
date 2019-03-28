@@ -10,7 +10,7 @@
   display: block;
   background-size: cover;
   border-radius: 5%;
-  align-content: center;
+  align-self: center;
   padding-top: 0.8em;
   margin: auto;
 }
@@ -22,7 +22,7 @@
   left: 0;
   text-align: center;
   z-index: 100;
-  font-family: "ZCOOL XiaoWei", serif;
+  font-family: "Oswald", sans-serif;
   color: white;
   text-shadow: 2px 2px black;
   font-size: 4em;
@@ -35,7 +35,7 @@
   left: 0;
   text-align: center;
   z-index: 100;
-  font-family: "ZCOOL XiaoWei", serif;
+  font-family: "Oswald", sans-serif;
   color: white;
   text-shadow: 2px 2px black;
   font-size: 4em;

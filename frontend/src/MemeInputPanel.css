@@ -4,7 +4,7 @@
   /* align-items: center; */
   border: 10px, blue;
   /* background-color: gray; */
-  margin-bottom: 2.5em;
+  margin-bottom: 1em;
   justify-content: center;
 }
 
@@ -16,13 +16,13 @@
 }
 
 #TextBox p {
-  font-family: "ZCOOL XiaoWei", serif;
+  font-family: "Oswald", sans-serif;
   font-weight: bold;
 }
 
 #InputPanelContainer h2 {
-  font-family: impact;
-  font-size: 3rem;
+  font-family: "Oswald", sans-serif;
+  font-size: 2rem;
   text-align: center;
 }
 
@@ -37,4 +37,5 @@
 }
 
 #memeButton {
+  font-family: "Oswald", sans-serif;
 }
