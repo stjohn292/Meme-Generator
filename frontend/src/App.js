@@ -21,7 +21,8 @@ class App extends Component {
         "/Images/Hart.jpg",
         "/Images/Kermit.jpg",
         "/Images/Grandma.jpg",
-        "/Images/money.jpg"
+        "/Images/money.jpg",
+        "/Images/stooges.png"
       ],
       memes: []
     };
