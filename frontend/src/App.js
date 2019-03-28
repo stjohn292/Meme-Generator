@@ -23,13 +23,13 @@ class App extends Component {
         "/Images/Grandma.jpg",
         "/Images/money.jpg"
       ],
-      memes:[]
+      memes: []
     };
   }
-  componentDidMount(){
+  componentDidMount() {
     fetch("https://localhost:44374/api/meme")
-    .then(res => res.json())
-    .then(json => this.setState({ memes: json}));
+      .then(res => res.json())
+      .then(json => this.setState({ memes: json }));
   }
 
   setImage = image => {
@@ -88,9 +88,9 @@ class App extends Component {
           setBottomText={this.setBottomText}
           publishMeme={this.publishMeme}
         />
-        <MemeListViewer 
-         memes ={this.state.memes}
-         memeList={this.state.memeList}
+        <MemeListViewer
+          memes={this.state.memes}
+          memeList={this.state.memeList}
         />
       </div>
     );

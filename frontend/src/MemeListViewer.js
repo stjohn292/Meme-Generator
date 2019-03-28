@@ -6,14 +6,19 @@ class MemeListViewer extends Component {
   render() {
     const { memes } = this.props;
     const memeList = memes.map(item => (
-      <div id="memeList">
+      <li key={id}>
         {" "}
         <span>{item.topText}</span>
         <img src={item.imagePath} />
         <span>{item.bottomText}</span>
-      </div>
+      </li>
     ));
-    return [memeList];
+    return (
+      <div id="memeList">
+        <h1>All Memes</h1>
+        <ul>{memeList}</ul>
+      </div>
+    );
   }
 }
 

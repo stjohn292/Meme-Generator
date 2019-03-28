@@ -9,7 +9,7 @@ class MemePreviewer extends Component {
       <>
         <div id="Preview">
           <span id="topText">{topText}</span>
-          <img id="image" src={selectedImage} />
+          <img id="previewImage" src={selectedImage} alt="" />
           <span id="bottomText">{bottomText}</span>
         </div>
       </>

@@ -5,7 +5,7 @@
   margin: auto;
 }
 
-#image {
+#previewImage {
   height: 50vh;
   display: block;
   background-size: cover;

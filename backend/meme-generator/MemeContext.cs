@@ -26,14 +26,14 @@ namespace meme_generator
             modelBuilder.Entity<Meme>().HasData(
             new Meme()
             {
-                Id = 1,
+                Id = -1,
                 TopText = "Hellooo..",
                 ImagePath = "/Images/Grandma.jpg",
                 BottomText = "Is anybody in there?",
             },
             new Meme()
             {
-                Id = 2,
+                Id =-2,
                 TopText = "I'm just in this",
                 ImagePath = "/Images/money.jpg",
                 BottomText = "for the money!"
