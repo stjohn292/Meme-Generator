@@ -1,11 +1,9 @@
 #Input {
   display: flex;
   flex-direction: row;
-  /* align-items: center; */
   border: 10px, blue;
-  /* background-color: gray; */
   margin-bottom: 1em;
-  justify-content: center;
+  justify-content: top;
 }
 
 #TextBox {

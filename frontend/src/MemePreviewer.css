@@ -6,13 +6,13 @@
 }
 
 #previewImage {
-  height: 50vh;
+  width: 65vh;
   display: block;
   background-size: cover;
   border-radius: 5%;
   align-self: center;
-  padding-top: 0.8em;
   margin: auto;
+  grid-area: b;
 }
 
 #topText {

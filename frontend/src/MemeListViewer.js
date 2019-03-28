@@ -17,7 +17,7 @@ class MemeListViewer extends Component {
     ));
     return (
       <div id="memeList">
-        <h2>Meme List</h2>
+        <h1>Meme List</h1>
         <ul>{memeList}</ul>
       </div>
     );

@@ -11,8 +11,8 @@
 }
 
 #memeList img {
-  max-width: 15vw;
-  max-height: 30vh;
+  width: 40vh;
+  /* max-height: 30vh; */
   background-size: cover;
 }
 
