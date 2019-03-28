@@ -1,25 +1,70 @@
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 #wholePage {
   display: grid;
   width: 100vw;
   height: 100vh;
   background-image: url("/Images/background1.jpg");
-  grid-template-columns: 1fr 0.05fr 1fr 1fr 1fr 0.05fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1.5fr 2fr 1.5fr;
+  grid-template-rows: 3fr 1fr;
   grid-template-areas:
-    "a . b b b . d d d"
-    "a . b b b . d d d"
-    "a . b b b . d d d"
-    "a . c c c . d d d";
+    "a b d"
+    "a c d";
+  margin: auto;
+  grid-gap: 1em;
 }
 
 #ImageChooser {
   grid-area: a;
+  margin: auto;
 }
 
 #Preview {
   grid-area: b;
+  margin: auto;
 }
 
 #Input {
   grid-area: c;
+  margin: auto;
+}
+
+#memeList {
+  grid-area: d;
+  margin: auto;
+  border: dotted yellow;
 }

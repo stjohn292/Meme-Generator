@@ -1,11 +1,9 @@
 #Input {
   display: flex;
   flex-direction: row;
-  /* align-items: center; */
   border: 10px, blue;
-  /* background-color: gray; */
-  margin-bottom: 2.5em;
-  justify-content: center;
+  margin-bottom: 1em;
+  justify-content: top;
 }
 
 #TextBox {
@@ -16,13 +14,13 @@
 }
 
 #TextBox p {
-  font-family: "ZCOOL XiaoWei", serif;
+  font-family: "Oswald", sans-serif;
   font-weight: bold;
 }
 
 #InputPanelContainer h2 {
-  font-family: impact;
-  font-size: 3rem;
+  font-family: "Oswald", sans-serif;
+  font-size: 2rem;
   text-align: center;
 }
 
@@ -34,4 +32,8 @@
 #BottomText {
   padding: 0.5rem;
   margin: 0.5rem;
+}
+
+#memeButton {
+  font-family: "Oswald", sans-serif;
 }
